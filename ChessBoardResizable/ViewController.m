@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ChessBoard.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    ChessBoard *board = [[ChessBoard alloc] initWithFrame:CGRectMake(100, 100, 280, 250)];
+    [self.view addSubview:board];
+    
+
 }
 
 
